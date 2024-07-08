@@ -2,7 +2,7 @@
 const fs = require("fs-extra");
 if (fs.existsSync(".env"))
   require("dotenv").config({ path: __dirname + "/.env" });
-global.audio = "";
+global.audio = "true";
 global.video = "";
 global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
@@ -50,7 +50,7 @@ module.exports = {
   VERSION: process.env.VERSION || "1.0.0",
   caption: process.env.CAPTION || "𝖂𝖔𝖜 𝖙𝖔𝖕𝖚 𝖒𝖉 𝖍𝖆𝖘 𝖏𝖚𝖘𝖙 𝖌𝖊𝖓𝖊𝖗𝖆𝖙𝖊𝖉 𝖆 𝖓𝖊𝖜 𝖋𝖎𝖑𝖊",
   author: process.env.PACK_AUTHER || "TOPU",
-  packname: process.env.PACK_NAME || "♥️",
+  packname: process.env.PACK_NAME || "👍😇",
   botname: process.env.BOT_NAME || "TOP-Md",
   ownername: process.env.OWNER_NAME || "TOPU",
   errorChat: process.env.ERROR_CHAT || "",
